@@ -1,0 +1,241 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  background-color: #39c;
+  -webkit-transition: all .30s;
+  transition: all .30s;
+}
+
+h1 {
+  font-weight: 500;
+  width: 70%;
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", Arial, "Open Sans", sans-serif;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.12);
+}
+
+.wrap {
+  background-color: #fff;
+  width: 70%;
+  margin: 0 auto;
+  padding: 25px 0px;
+  position: relative;
+}
+
+.wrap p,
+.wrap .form,
+.wrap #pre-result,
+.wrap .code-wrapper {
+  margin: 0px 25px;
+}
+
+.wrap a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+.wrap a:hover {
+  text-decoration: underline;
+}
+
+.wrap h3 {
+  -webkit-transition: all .30s;
+  transition: all .30s;
+  font-size: 20px;
+  background-color: #39c;
+  display: table;
+  padding: 10px 20px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: "Trebuchet MS", Arial, "Open Sans", sans-serif;
+  color: #fff;
+  margin: 25px 0px;
+  box-shadow: inset -1px 2px 1px rgba(0, 0, 0, 0.08);
+}
+
+.wrap .form-group {
+  margin-bottom: 10px;
+}
+.wrap .form-group:last-child {
+  margin-bottom: 0px;
+}
+
+.wrap .form-group label[for="text-rank"],
+.wrap .form-group label[for="icon-val"] {
+  display: block;
+}
+
+.wrap .form-group input[type="text"],
+.wrap .form-group textarea {
+  display: block;
+  margin-top: 7px;
+  margin-bottom: 23px;
+  width: 100%;
+  padding: 7px 9px;
+  font-size: 15px;
+  color: #464a4c;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  -webkit-transition: 0.15s, ease-in-out;
+  transition: 0.15s, ease-in-out;
+  resize: vertical;
+}
+
+.wrap .form-group input[type="text"]:active,
+.wrap .form-group input[type="text"]:focus,
+.wrap .form-group textarea:active,
+.wrap .form-group textarea:focus {
+  color: #464a4c;
+  background-color: #fff;
+  border-color: #39c;
+  outline: none;
+}
+
+.wrap .form-group textarea {
+  height: 36px;
+}
+
+.wrap .form-group textarea[readonly]:hover,
+.wrap .form-group textarea[readonly]:focus {
+  color: #464a4c;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+input[type="color"] {
+  display: none;
+}
+
+.pseudo-color {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  background-color: #000;
+  display: inline-block;
+  border-radius: 99px;
+  border: solid 1px transparent;
+}
+
+.pseudo-color[style*="rgb(255, 255, 255)"] {
+  border-color: #000 !important;
+}
+
+
+.wrap #pre-result {
+  display: table;
+  cursor: not-allowed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  user-drag: none;
+}
+
+.code-wrapper h4 {
+  color: #39c;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+.code-wrapper p {
+  margin: 0px;
+  margin-top: -15px;
+  color: #8c8c8c;
+}
+
+span.gerar {
+  font-size: 20px;
+  -webkit-transition: all .30s;
+  transition: all .30s;
+  color: #fff;
+  background-color: #3399cc;
+  display: inline-block;
+  padding: 10px 20px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: "Trebuchet MS", Arial, "Open Sans", sans-serif;
+  margin: 25px 0px;
+  box-shadow: inset 1px 2px 1px rgba(0, 0, 0, 0.08);
+  float: right;
+  cursor: pointer;
+}
+
+span.gerar:hover,
+.body-green-bg {
+  background-color: #71be47 !important;
+}
+
+.textarea-wrapper {
+  position: relative;
+}
+
+.textarea-wrapper a.fa-copy {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 1px);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #666666;
+  text-decoration: none!important;
+}
+
+#css-wrapper a.fa-copy {
+  top: 20px;
+}
+
+a#repeat-generation {
+  /*position: absolute;
+  bottom: 10px;
+  right: 10px;*/
+  color: #39c;
+  text-decoration: none!important;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all .45s;
+  transition: all .45s;
+  font-size: 18px;
+  float: right;
+  margin-top: 13px;
+}
+
+a#repeat-generation:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/*
+ * Pseudo-config:
+ */
+
+::selection {
+  background-color: rgba(238, 187, 51, 0.25);
+}

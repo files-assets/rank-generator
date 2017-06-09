@@ -1,0 +1,89 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gerador de Ranks</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://illiweb.com/fa/favicon/discussion.ico">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,500">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Title -->
+  <h1>Gerador de Ranks</h1>
+
+  <!-- Page Wrap -->
+  <div class="wrap">
+    <p>
+      Usando esta página, você pode gerar ranks em CSS! Leia nosso <a href="javascript:void(0)">tutorial</a> para saber mais.
+      <br />
+      Após completar os campos e criar seu rank, clique no botão "<strong>gerar</strong>" para criar os códigos!
+    </p>
+    <h3>Configurações</h3>
+    <div class="form">
+      <div class="form-group">
+        <label for="text-rank">Texto do rank:</label>
+        <input type="text" id="text-rank" value="Exemplo"/>
+      </div>
+      <div class="form-group">
+        <input type="color" id="background-color-val"/>
+        <label class="pseudo-color" for="background-color-val"></label>
+        <label for="background-color-val">Selecione a cor do fundo</label>
+      </div>
+      <div class="form-group" style="margin-bottom: 16px">
+        <input type="color" id="color-val"/>
+        <label class="pseudo-color" for="color-val"></label>
+        <label for="color-val">Selecione a cor do texto</label>
+      </div>
+      <div class="form-group">
+        <label for="icon-val">Classe do ícone</label>
+        <input type="text" id="icon-val" value="fa-cog"/>
+        <label class="pseudo-icon" for="icon-val"></label>
+      </div>
+    </div>
+    <div class="preview">
+      <h3>Veja seu novo rank:</h3>
+      <div id="pre-result"><span class="rank" style="padding: 5px; border-radius: 3px"><i class="fa fa-cog"></i><span> Exemplo</span></span></div>
+    </div>
+    <div class="code-section">
+      <h3 style="display: inline-block;">Códigos do rank:</h3><span class="gerar" id="code-generate">Gerar</span>
+      <div class="code-wrapper">
+        <div class="form-group">
+          <h4>1. Código do Rank:</h4>
+          <div class="textarea-wrapper">
+            <textarea class="code" id="generated-code-rank" readonly></textarea>
+          </div>
+          <p class="grey-scale">Coloque o código acima como o novo <strong>rank</strong>.</p>
+        </div>
+        <div class="form-group">
+          <h4>2. Código CSS:</h4>
+          <div class="textarea-wrapper" id="css-wrapper">
+            <textarea class="code" id="generated-code-css" style="height: 124px;" readonly></textarea>
+          </div>
+          <p class="grey-scale">Coloque o código acima ao final da <strong>Folha de Estilos CSS</strong>. <a href="javascript:void(0)" class="fa fa-repeat" id="repeat-generation" title="Reiniciar."></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="others-section" style="margin-top: 50px;">
+      <h3>Saiba mais</h3>
+      <p>
+        Se você tiver dúvidas, entre em nosso <a href="http://ajuda.forumeiros.com/forum">Fórum de Suporte</a>, para obter suporte em relação à este gerador e/ou ao serviço Forumeiros.
+      </p>
+      <p>
+        Desenvolvido por <a href="http://ajuda.forumeiros.com/u60563" target="_blank">Luiz~</a> sob a <a href="https://opensource.org/licenses/MIT" target="_blank">Licença MIT</a>.
+    </div>
+  </div>
+
+  <h1 id="scroll-top" style="cursor: pointer;"><i class="fa fa-angle-up"></i></h1>
+
+  <!-- Scripts (jQuery & Functions)-->
+  <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/functions.js"></script>
+</body>
+</html>
